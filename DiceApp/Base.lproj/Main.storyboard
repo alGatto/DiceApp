@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,12 +22,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="umz-O9-IcB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbackground" translatesAutoresizingMaskIntoConstraints="NO" id="umz-O9-IcB">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Weh-FS-YSd">
+                                <rect key="frame" x="67" y="87" width="240" height="192"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="huT-vk-Nae">
+                                <rect key="frame" x="40" y="344" width="120" height="120"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mk2-BP-vPU">
+                                <rect key="frame" x="215" y="344" width="120" height="120"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.31612849235534668" green="0.39161026477813721" blue="0.081984706223011017" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="umz-O9-IcB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="0A7-3z-vtS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Weh-FS-YSd" secondAttribute="trailing" constant="52" id="3cP-SH-4f2"/>
+                            <constraint firstItem="huT-vk-Nae" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="324" id="9kV-4R-4A6"/>
+                            <constraint firstItem="mk2-BP-vPU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="324" id="COm-kL-cjY"/>
+                            <constraint firstItem="mk2-BP-vPU" firstAttribute="leading" secondItem="Weh-FS-YSd" secondAttribute="trailing" constant="-92" id="Dgb-tx-dq5"/>
+                            <constraint firstItem="umz-O9-IcB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="E6F-0h-aDR"/>
+                            <constraint firstItem="Weh-FS-YSd" firstAttribute="leading" secondItem="huT-vk-Nae" secondAttribute="trailing" constant="-93" id="KWr-4a-OVr"/>
+                            <constraint firstItem="huT-vk-Nae" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="VEj-bn-W0Z"/>
+                            <constraint firstItem="Weh-FS-YSd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="VRP-zm-4Wa"/>
+                            <constraint firstItem="Weh-FS-YSd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="67" id="X5t-sj-M2n"/>
+                            <constraint firstItem="mk2-BP-vPU" firstAttribute="bottom" secondItem="huT-vk-Nae" secondAttribute="bottom" id="Xey-Qx-l5q"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mk2-BP-vPU" secondAttribute="bottom" constant="203" id="cvU-Kc-ZbD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="umz-O9-IcB" secondAttribute="bottom" id="efu-Fp-wZX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mk2-BP-vPU" secondAttribute="trailing" constant="24" id="fUc-Y1-wyQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="umz-O9-IcB" secondAttribute="trailing" constant="-16" id="pqU-PR-ptd"/>
+                            <constraint firstItem="mk2-BP-vPU" firstAttribute="leading" secondItem="huT-vk-Nae" secondAttribute="trailing" constant="55" id="yxM-Lc-BFI"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -35,6 +62,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="diceeLogo" width="294" height="192"/>
         <image name="newbackground" width="500" height="466"/>
     </resources>
 </document>
